@@ -6,3 +6,4 @@ Am Tag zuvor erscheint eine Warnung, dass Sie bezahlen müssen.
 + bei Verlangerung --> bsp. +10E + 2 Woche zu Frist
 + sortierung! 
 + (loggierung)
++++
