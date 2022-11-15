@@ -1,4 +1,4 @@
-package htw.berlin.demo.api;
+package htw.berlin.demo.webtech.api;
 
 public class Person {
     private long id;
