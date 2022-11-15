@@ -1,9 +1,7 @@
 package htw.berlin.demo;
 
 import htw.berlin.demo.webtech.api.Person;
-import htw.berlin.demo.webtech.api.PersonCreateRequest;
-import htw.berlin.demo.webtech.persistance.PersonEntity;
-import htw.berlin.demo.webtech.persistance.PersonRepository;
+import htw.berlin.demo.webtech.api.PersonManipulationRequest;
 import htw.berlin.demo.webtech.service.PersonService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +33,7 @@ public class PersonRestController {
     }
 
     @PostMapping(path = "/api/v1/persons")
-    public ResponseEntity<Void> createPerson(@RequestBody PersonCreateRequest request) throws URISyntaxException {
+    public ResponseEntity<Void> createPerson(@RequestBody PersonManipulationRequest request) throws URISyntaxException {
         var person = personService.create(request);
         URI uri = new URI("/api/v1/persons/" + person.getId());
         return ResponseEntity.created(uri).build();
