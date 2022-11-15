@@ -1,4 +1,4 @@
-package htw.berlin.demo;
+package htw.berlin.demo.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
