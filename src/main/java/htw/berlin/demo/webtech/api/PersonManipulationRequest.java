@@ -12,9 +12,7 @@ public class PersonManipulationRequest {
         this.vaccinated = vaccinated;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getFirstName() { return firstName; }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -35,4 +33,5 @@ public class PersonManipulationRequest {
     public void setVaccinated(boolean vaccinated) {
         this.vaccinated = vaccinated;
     }
+
 }
